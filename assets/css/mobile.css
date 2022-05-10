@@ -37,6 +37,14 @@
   #our-offer .grid .card h4{
     font-weight: 400;
     }
+    /* react */
+    #react-native .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+    #react-native .grid>*:last-child{
+      justify-content: center;
+          }
   /* footer */
 #footer .footer-container {
   grid-template-columns: 1fr;

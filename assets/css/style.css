@@ -94,6 +94,31 @@ ul {
 
 /* header end */
 
+/*React*/
+#react-native{
+    margin-top: 4rem;
+}
+#react-native h2{
+    text-align: center;
+    font-weight: 700;
+}
+#react-native .grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 2rem;
+}
+#react-native .grid .grid-item{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+#react-native .last-item{
+    display: grid;
+    align-items: center;
+}
+
 /* Offer section */
 #our-offer{
     margin-top: 5rem;
