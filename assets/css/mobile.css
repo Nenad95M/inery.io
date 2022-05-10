@@ -17,3 +17,9 @@ grid-template-columns: 1fr;
 #footer .footer-container section {
     text-align: center;
 }
+.copyright-info{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}

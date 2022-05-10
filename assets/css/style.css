@@ -92,7 +92,13 @@ box-shadow: 2px 1px 15px 0px #0ff;
 
 #footer .footer-container section div {
     padding-top: 1rem;
- 
+ }
+ #footer .footer-container .logo-info{
+     display: flex;
+     gap: 1rem;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
  }
 .copyright-info{
     border-top: 1px solid #001C55;
@@ -103,4 +109,8 @@ box-shadow: 2px 1px 15px 0px #0ff;
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    width: 80%;
+    overflow: hidden;
+    text-align: center;
 }
+/* footer-end */
