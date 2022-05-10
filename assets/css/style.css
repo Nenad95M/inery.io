@@ -25,7 +25,9 @@ ul {
     padding: 2rem 2rem;
     overflow: hidden;
 }
-
+.bold{
+    font-weight: bold;
+}
 /* header start */
 #header {
     background: url('/assets/img/header-img.png') no-repeat center center/cover;
@@ -67,7 +69,7 @@ ul {
 }
 
 #header .text p {
-    padding-top:0.5rem ;
+    padding-top: 0.5rem;
     font-weight: 400;
 }
 
@@ -95,43 +97,50 @@ ul {
 /* header end */
 
 /*React*/
-#react-native{
+#react-native {
     margin-top: 4rem;
 }
-#react-native h2{
+
+#react-native h2 {
     text-align: center;
     font-weight: 700;
 }
-#react-native .grid{
+
+#react-native .grid {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1rem;
     border-bottom: 1px solid #E1E1E1;
     padding-bottom: 2rem;
 }
-#react-native .grid .grid-item{
+
+#react-native .grid .grid-item {
     display: grid;
     grid-template-columns: auto auto;
     gap: 1rem;
 }
-#react-native .last-item{
+
+#react-native .last-item {
     display: grid;
     align-items: center;
 }
 
 /* Offer section */
-#our-offer{
+#our-offer {
     margin-top: 5rem;
 }
-#our-offer h2{
+
+#our-offer h2 {
     text-align: center;
 }
-#our-offer .grid{
+
+#our-offer .grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 4rem;
 }
-#our-offer .grid .card{
+
+#our-offer .grid .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,75 +148,116 @@ ul {
     text-align: center;
     gap: 1rem;
 }
-#our-offer .grid .card h4{
-   font-weight: 500;
+
+#our-offer .grid .card h4 {
+    font-weight: 500;
 }
-#our-offer .grid .card p{
+
+#our-offer .grid .card p {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.7rem;
 }
-/*job-description*/
-#job-description .text-container{
-    line-height: 1.7rem;
-   max-width: 1000px;
-   margin: auto;
-padding: 1rem 2rem;
-}
 
-#job-description .text-list{
+/*job-description*/
+#job-description .text-container {
+    line-height: 1.6rem;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem 2rem;
+}
+#job-description .text-container .title{
+    display: flex;
+    justify-content: space-between;
+}
+#job-description .text-container h2 {
+    color: #3C3C3C;
+    font-weight: 700;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+#job-description .text-container h3 {
+    color: #3C3C3C;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+#job-description .text-list {
     list-style: disc;
 }
-#job-description .text-list li{
-padding-top: 1rem;
+
+#job-description .text-list li {
+    padding-top: 1rem;
+}
+#job-description .apply-btn{
+    margin-top: 7rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    background-color: #3B3B3B;
+    color:#FFFFFF ;
+    text-align: center;
+    font-weight: 700;
+}
+#job-description .apply-btn:hover{
+    background-color: #595757;
+
 }
 /* end of offer section */
-#subscribe{
+#subscribe {
     background: url(/assets/img/header-img.png);
     height: 60vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+
 #subscribe .letter {
     display: grid;
     align-items: center;
     justify-content: center;
 }
-#subscribe .letter img{
+
+#subscribe .letter img {
     width: 40%;
 }
-#subscribe .user-input{
+
+#subscribe .user-input {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
     align-items: center;
-border: 1px solid green;
-color: #FFFFFF;
-width: fit-content;
+    border: 1px solid green;
+    color: #FFFFFF;
+    width: fit-content;
 
 }
-#subscribe .user-input  p{
- font-weight: 700;
- font-size: 1.5rem;
- width: 40%;
- 
+
+#subscribe .user-input p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 40%;
 }
-#subscribe .user-input input{
-background: transparent;
-width: 40%;
-border: none;
-border-bottom: 1px solid #FFFFFF;
-padding: 1rem;
+
+#subscribe .user-input input {
+    background: transparent;
+    width: 40%;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 1rem;
 }
-#subscribe .user-input input:focus{
+
+#subscribe .user-input input:focus {
     outline: none;
     color: #FFFFFF;
 }
+
 /* footer start */
-#footer{
+#footer {
     margin-top: 5rem;
 }
+
 #footer .footer-container {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;

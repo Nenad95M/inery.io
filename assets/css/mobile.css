@@ -55,12 +55,28 @@
 /*subscribe*/
 #subscribe {
   grid-template-columns: 1fr;
-}
 
+}
+/*job description */
+#job-description .text-container .title{
+  display: block;
+  justify-content: space-between;
+}
+#job-description .text-container{
+text-align: center;
+padding: 0 4rem;
+}
+#job-description .text-list{
+list-style: none;
+}
+#job-description .apply-btn{
+margin-top: 2rem;
+padding: 1rem;
+font-size: 0.8rem;
+}
 /* footer */
 #footer .footer-container {
   grid-template-columns: 1fr;
-  grid-auto-flow: dense;
 }
 
 #footer .footer-container section {
