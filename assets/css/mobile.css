@@ -8,3 +8,9 @@
 #header .button-glow {
   box-shadow: none;
 }
+.container {
+  max-width: 390px;
+}
+#footer .footer-container{
+grid-template-columns: 1fr;
+}

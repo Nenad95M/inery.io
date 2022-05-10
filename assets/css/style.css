@@ -9,11 +9,17 @@ body{
 a{
     color: inherit;
 }
+ul{
+    list-style: none;
+}
 /* utilites */
 .container{
-    
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem 1rem;
+    overflow: hidden;
 }
-/* HEADER */
+/* header start */
 #header{
     background: url('/assets/img/header-img.png');   
     position: relative;   
@@ -44,16 +50,7 @@ a{
     margin: 1rem;
 
 }
-/*PHONE*/
-/* @media(max-width:700px){
-    #header .text{
-        width: 90%;
-    }
-    #header .buttons button{
-    display: block;
-    padding: 0.6rem 8rem !important;
 
-}} */
 
 #header .text h1{
     font-weight: 700;
@@ -78,4 +75,26 @@ a{
 }
 #header .button-glow{
 box-shadow: 2px 1px 15px 0px #0ff;
+}
+/* header end */
+
+/* footer start */
+#footer .footer-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+#footer .footer-container>*:first-child{
+  padding:0 3rem;
+}
+.copyright-info{
+    border-top: 1px solid #001C55;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
