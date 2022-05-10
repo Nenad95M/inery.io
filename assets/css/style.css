@@ -6,8 +6,12 @@
 body{
     font-family: 'Inter', sans-serif;
 }
+a{
+    color: inherit;
+}
 /* utilites */
 .container{
+    
 }
 /* HEADER */
 #header{
@@ -37,16 +41,19 @@ body{
     align-self: center;
     color: #FFFFFF;
     width: 70%;
+    margin: 1rem;
+
 }
 /*PHONE*/
-@media(max-width:700px){
+/* @media(max-width:700px){
     #header .text{
         width: 90%;
     }
     #header .buttons button{
     display: block;
+    padding: 0.6rem 8rem !important;
 
-}}
+}} */
 
 #header .text h1{
     font-weight: 700;
@@ -57,15 +64,18 @@ body{
 #header .buttons button{
     
     border: 1px solid #00FFFF;
-    box-shadow: 2px 1px 15px 0px #0ff;
     border-radius: 41px;
     background-color: transparent;
     padding: 0.6rem 4rem;
-    color: #FFFFFF;
-    margin-bottom: 1em;
-    margin-top: 1em;
-
+    color: #00FFFF;
+    margin: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 #header .buttons button:hover{
-  background-color: #00FFFF;  
+  background-color: #00FFFF;
+  color: #001C55;  
+}
+#header .button-glow{
+box-shadow: 2px 1px 15px 0px #0ff;
 }

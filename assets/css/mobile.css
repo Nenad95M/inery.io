@@ -1,0 +1,10 @@
+#header .text {
+  width: 90%;
+}
+#header .buttons button {
+  display: block;
+  padding: 0.6rem 8rem !important;
+}
+#header .button-glow {
+  box-shadow: none;
+}
