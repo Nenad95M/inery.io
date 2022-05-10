@@ -85,9 +85,15 @@ box-shadow: 2px 1px 15px 0px #0ff;
     gap: 1.5rem;
 }
 
+
 #footer .footer-container>*:first-child{
   padding:0 3rem;
 }
+
+#footer .footer-container section div {
+    padding-top: 1rem;
+ 
+ }
 .copyright-info{
     border-top: 1px solid #001C55;
     display: flex;
