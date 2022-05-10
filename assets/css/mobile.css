@@ -15,39 +15,52 @@
 .container {
   max-width: 390px;
 }
+
 /* our offer */
-#our-offer{
+#our-offer {
   margin-top: 2.5rem;
 }
-#our-offer .grid{
- grid-template-columns: 1fr;
- gap: 2rem;
+
+#our-offer .grid {
+  grid-template-columns: 1fr;
+  gap: 2rem;
 
 }
-#our-offer .grid .card{
+
+#our-offer .grid .card {
   padding: 0 3rem;
   gap: 0.2rem;
 
-  }
-  
-  #our-offer .grid .card p{
+}
+
+#our-offer .grid .card p {
   font-size: 10px;
   line-height: 1.2rem;
-  }
-  #our-offer .grid .card h4{
-    font-weight: 400;
-    }
-    /* react */
-    #react-native .grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    }
-    #react-native .grid>*:last-child{
-      justify-content: center;
-          }
-  /* footer */
+}
+
+#our-offer .grid .card h4 {
+  font-weight: 400;
+}
+
+/* react */
+#react-native .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#react-native .grid>*:last-child {
+  justify-content: center;
+}
+
+/*subscribe*/
+#subscribe {
+  grid-template-columns: 1fr;
+}
+
+/* footer */
 #footer .footer-container {
   grid-template-columns: 1fr;
+  grid-auto-flow: dense;
 }
 
 #footer .footer-container section {

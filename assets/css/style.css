@@ -28,7 +28,7 @@ ul {
 
 /* header start */
 #header {
-    background: url('/assets/img/header-img.png');
+    background: url('/assets/img/header-img.png') no-repeat center center/cover;
     position: relative;
     height: 64vh;
     display: flex;
@@ -146,6 +146,63 @@ ul {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.7rem;
+}
+/*job-description*/
+#job-description .text-container{
+    line-height: 1.7rem;
+   max-width: 1000px;
+   margin: auto;
+padding: 1rem 2rem;
+}
+
+#job-description .text-list{
+    list-style: disc;
+}
+#job-description .text-list li{
+padding-top: 1rem;
+}
+/* end of offer section */
+#subscribe{
+    background: url(/assets/img/header-img.png);
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#subscribe .letter {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#subscribe .letter img{
+    width: 40%;
+}
+#subscribe .user-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+border: 1px solid green;
+color: #FFFFFF;
+width: fit-content;
+
+}
+#subscribe .user-input  p{
+ font-weight: 700;
+ font-size: 1.5rem;
+ width: 40%;
+ 
+}
+#subscribe .user-input input{
+background: transparent;
+width: 40%;
+border: none;
+border-bottom: 1px solid #FFFFFF;
+padding: 1rem;
+}
+#subscribe .user-input input:focus{
+    outline: none;
+    color: #FFFFFF;
 }
 /* footer start */
 #footer{
