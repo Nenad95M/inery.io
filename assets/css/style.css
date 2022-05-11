@@ -75,7 +75,7 @@ ul {
     font-weight: 400;
 }
 
-#header  .button {
+#header .button {
 
     border: 1px solid #00FFFF;
     border-radius: 41px;
@@ -162,6 +162,8 @@ ul {
     line-height: 1.7rem;
 }
 
+/* end of offer section */
+
 /*job-description*/
 #job-description .text-container {
     line-height: 1.6rem;
@@ -212,23 +214,28 @@ ul {
 #job-description .apply-btn:hover {
     background-color: #595757;
 }
-#application-form{
+
+/*form*/
+#application-form {
     width: 50%;
 }
-/*form*/
-#application-form div{
-margin-top: 1rem;
+
+#application-form div {
+    margin-top: 1rem;
 }
-#application-form .form-group{
-display: grid;
-grid-template-columns: 1fr 3fr;
+
+#application-form .form-group {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
-#application-form input{
-width: 100%;
-border: 0.5px solid #3B3B3B;
-padding: 0.3rem;
+
+#application-form input {
+    width: 100%;
+    border: 0.5px solid #3B3B3B;
+    padding: 0.3rem;
 }
-#application-form textarea{
+
+#application-form textarea {
     width: 100%;
     height: 12rem;
     resize: none;
@@ -246,26 +253,20 @@ padding: 0.3rem;
 #application-form .form-btn:hover {
     background-color: #595757;
 }
-#application-form .required{
-        color: red;
-        padding: 2px;
-    }
-   
-/*end of form*/
-/* end of offer section */
-.proba1 {
-    height: 60vh;
-    background: url(/assets/img/leterandvectors.png), url(/assets/img/letter-bg.png) no-repeat;
-    background-blend-mode: normal;
+
+#application-form .required {
+    color: red;
+    padding: 2px;
 }
+
+/*end of form*/
+
 
 #subscribe {
     background: url(/assets/img/leterandvectors.png), url(/assets/img/header-img.png) no-repeat center center/cover;
     background-size: cover;
     height: 70vh;
-
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
 }
 
 #subscribe .letter {
@@ -303,9 +304,11 @@ padding: 0.3rem;
     border-bottom: 1px solid #FFFFFF;
     padding: 1rem;
 }
+
 #subscribe .user-input input::placeholder {
-color: #FFFFFF;
+    color: #FFFFFF;
 }
+
 #subscribe .user-input input:focus {
     outline: none;
     color: #FFFFFF;

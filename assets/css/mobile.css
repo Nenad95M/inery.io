@@ -2,16 +2,17 @@
 #header .text {
   width: 90%;
 }
-
-#header .buttons button {
+#header .logo{
+  top: 1.5rem;
+}
+#header .button {
   display: block;
-  padding: 0.6rem 8rem !important;
+  padding: 0.4rem 7rem !important;
 }
 
 #header .button-glow {
   box-shadow: none;
 }
-
 
 
 /* our offer */
@@ -135,7 +136,31 @@
   display: grid;
   justify-content: center;
 }
-
+/*Subscribe*/
+#subscribe {
+  background: url(/assets/img/header-img.png) no-repeat center center/cover;
+  background-size: cover;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  justify-content:center;
+  grid-template-columns: 1fr;
+}
+#subscribe .letter {
+  display: flex;
+  justify-content: center;
+}
+#subscribe .user-input p{
+  text-align: center;
+  width: 80%;
+}
+#subscribe .user-input input{
+  width: 80%;
+}
+#subscribe .letter img {
+  display: inherit;
+  /* width: 50%; */
+}
+/*end of subscribe*/
 /* footer */
 #footer .footer-container {
   grid-template-columns: 1fr;
