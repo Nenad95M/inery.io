@@ -12,9 +12,7 @@
   box-shadow: none;
 }
 
-.container {
-  max-width: 390px;
-}
+
 
 /* our offer */
 #our-offer {
@@ -78,39 +76,43 @@
   padding: 1rem;
   font-size: 0.8rem;
 }
+
 /*form*/
 #application-form {
   display: grid;
+
+  grid-template-columns: auto;
+}
+
+#application-form .form-section {
+  text-align: center;
+
+}
+
+#application-form .form-group {
+  text-align: center;
+  display: grid;
+
   grid-template-columns: 1fr;
 }
-  #application-form .form-group{
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: 1fr;
-  }
-  #application-form input{
+
+#application-form input {
   border: none;
   border-bottom: 0.5px solid #3B3B3B;
-  }
-  #application-form textarea{
-      width: 100%;
-      height: 12rem;
-      resize: none;
-  }
-  #cv {
-      /* display: none; */
-  }
-  
-  #application-form .form-btn {
-  
-  }
-  
+}
 
-  #application-form .required{
-          display: none;
-      }
-     
+#application-form textarea {}
+
+#cv {
+  border: 1px solid #3B3B3B;
+}
+
+
+
+#application-form .required {
+  display: none;
+}
+
 /*end of form*/
 /*similar offers*/
 #similar-offers .row {

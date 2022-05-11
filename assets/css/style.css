@@ -220,7 +220,7 @@ margin-top: 1rem;
 }
 #application-form .form-group{
 display: grid;
-grid-template-columns: 1fr 3fr auto;
+grid-template-columns: 1fr 3fr;
 }
 #application-form input{
 width: 100%;
