@@ -25,9 +25,11 @@ ul {
     padding: 2rem 2rem;
     overflow: hidden;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
+
 /* header start */
 #header {
     background: url('/assets/img/header-img.png') no-repeat center center/cover;
@@ -166,22 +168,26 @@ ul {
     margin: auto;
     padding: 1rem 2rem;
 }
-#job-description .text-container .title{
+
+#job-description .text-container .title {
     display: flex;
     justify-content: space-between;
 }
+
 #job-description .text-container h2 {
     color: #3C3C3C;
     font-weight: 700;
     padding: 1rem 0;
     font-size: 2rem;
 }
+
 #job-description .text-container h3 {
     color: #3C3C3C;
     font-weight: 400;
     padding: 0.5rem 0;
     font-size: 1.1rem;
 }
+
 #job-description .text-list {
     list-style: disc;
 }
@@ -189,21 +195,41 @@ ul {
 #job-description .text-list li {
     padding-top: 1rem;
 }
-#job-description .apply-btn{
+
+#job-description .apply-btn {
     margin-top: 7rem;
     padding: 0.5rem;
     text-transform: uppercase;
     display: block;
     width: 100%;
     background-color: #3B3B3B;
-    color:#FFFFFF ;
+    color: #FFFFFF;
     text-align: center;
     font-weight: 700;
 }
-#job-description .apply-btn:hover{
+
+#job-description .apply-btn:hover {
     background-color: #595757;
+}
+
+/*form*/
+#cv {
+    display: none;
 
 }
+
+#application-form .form-btn {
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 1rem 8rem;
+}
+
+#application-form .form-btn:hover {
+    background-color: #595757;
+}
+
+/*end of form*/
 /* end of offer section */
 #subscribe {
     background: url(/assets/img/header-img.png);
@@ -253,6 +279,48 @@ ul {
     color: #FFFFFF;
 }
 
+/* similar offers */
+#similar-offers {
+    display: grid;
+}
+#similar-offers .title-top{
+margin: 2rem 0;
+}
+#similar-offers .job-table>*:nth-child(even){
+    background-color:#336FAA26 ;
+}
+#similar-offers .row{
+    margin-top: 1rem;
+    padding: 1rem;
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 1fr;
+/* box-shadow:1px 1px 5px 0px  #7C7C7C; */
+box-shadow: 0px 0px 13px 1px rgba(124,124,124,0.22);
+}
+#similar-offers .location, #similar-offers .level, #similar-offers .department {
+   display: grid;
+   align-items: center;
+}
+#similar-offers .webflow-img {
+    background: url('/assets/img/similarOffers/webflow.png') no-repeat center;
+    background-color: #336FAA;
+    width: 80px;
+    height: 80px;
+
+}
+
+#similar-offers .js-img {
+    background: url('/assets/img/similarOffers/javascript.png') no-repeat center;
+    background-color: #336FAA;
+    width: 80px;
+    height: 80px;
+}
+#similar-offers .all-jobs{
+text-align: center;
+text-decoration: underline;
+margin-top: 2rem;
+cursor: pointer;
+}
 /* footer start */
 #footer {
     margin-top: 5rem;
