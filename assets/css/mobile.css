@@ -78,7 +78,40 @@
   padding: 1rem;
   font-size: 0.8rem;
 }
+/*form*/
+#application-form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+  #application-form .form-group{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  }
+  #application-form input{
+  border: none;
+  border-bottom: 0.5px solid #3B3B3B;
+  }
+  #application-form textarea{
+      width: 100%;
+      height: 12rem;
+      resize: none;
+  }
+  #cv {
+      /* display: none; */
+  }
+  
+  #application-form .form-btn {
+  
+  }
+  
 
+  #application-form .required{
+          display: none;
+      }
+     
+/*end of form*/
 /*similar offers*/
 #similar-offers .row {
   grid-template-columns: 1fr;
