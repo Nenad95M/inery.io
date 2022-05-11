@@ -75,11 +75,12 @@ ul {
     font-weight: 400;
 }
 
-#header .buttons button {
+#header  .button {
 
     border: 1px solid #00FFFF;
     border-radius: 41px;
     background-color: transparent;
+    display: inline-block;
     padding: 0.6rem 4rem;
     color: #00FFFF;
     margin: 1rem;
@@ -87,7 +88,7 @@ ul {
     font-size: 1rem;
 }
 
-#header .buttons button:hover {
+#header button:hover {
     background-color: #00FFFF;
     color: #001C55;
 }
@@ -232,9 +233,7 @@ padding: 0.3rem;
     height: 12rem;
     resize: none;
 }
-#cv {
-    /* display: none; */
-}
+
 
 #application-form .form-btn {
     background-color: #3B3B3B;

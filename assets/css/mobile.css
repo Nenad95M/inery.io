@@ -101,7 +101,6 @@
   border-bottom: 0.5px solid #3B3B3B;
 }
 
-#application-form textarea {}
 
 #cv {
   border: 1px solid #3B3B3B;
@@ -141,7 +140,9 @@
 #footer .footer-container {
   grid-template-columns: 1fr;
 }
-
+#footer .footer-container>*:last-child{
+display: none;
+}
 #footer .footer-container section {
   text-align: center;
 }
