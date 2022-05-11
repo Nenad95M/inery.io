@@ -79,6 +79,29 @@
   font-size: 0.8rem;
 }
 
+/*similar offers*/
+#similar-offers .row {
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+#similar-offers .job-avatar {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#similar-offers .job-avatar>:first-child {
+  margin: auto;
+}
+
+#similar-offers .location,
+#similar-offers .level,
+#similar-offers .department {
+  display: grid;
+  justify-content: center;
+}
+
 /* footer */
 #footer .footer-container {
   grid-template-columns: 1fr;

@@ -21,7 +21,7 @@
             <img src="/assets/img/logo.png" alt="logo">
         </div>
         <div class="header-container">
-            
+
             <div class="text">
                 <h1>Heading 1</h1>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
@@ -36,70 +36,133 @@
     </header>
     <!-- header end -->
     <main>
-    </header>
-    <section id="react-native">
-        <h2>React-Native Developer</h2>
-        <div class="container">
-      <div class="grid">
-          <div class="grid-item">
-          <img draggable="false" src="/assets/img/location.png" alt="location">
-          <img draggable="false" src="/assets/img/time.png" alt="time">
-        </div>
-        <div class="grid-item">
-            <img draggable="false" src="/assets/img/level.png" alt="level">
-          <img draggable="false" src="/assets/img/department.png" alt="department">
-        </div>
-         <div class="last-item">
-            <img draggable="false" src="/assets/img/salary.png" alt="salary">
-        </div>
-       
-      </div>
-    </div>
-    </section>
+        </header>
+        <section id="react-native">
+            <h2>React-Native Developer</h2>
+            <div class="container">
+                <div class="grid">
+                    <div class="grid-item">
+                        <img draggable="false" src="/assets/img/location.png" alt="location">
+                        <img draggable="false" src="/assets/img/time.png" alt="time">
+                    </div>
+                    <div class="grid-item">
+                        <img draggable="false" src="/assets/img/level.png" alt="level">
+                        <img draggable="false" src="/assets/img/department.png" alt="department">
+                    </div>
+                    <div class="last-item">
+                        <img draggable="false" src="/assets/img/salary.png" alt="salary">
+                    </div>
 
-     <section>
-         <form id="application-form" action="javascript:void(0)">
-             <legend>Basic information</legend>
-             <label for="first-name">First Name</label>
-             <input type="text" id="first-name" name="firstName">
-             <label for="last-name">Last Name</label>
-             <input type="text" id="last-name" name="lastName">
-             <label for="email">Email</label>
-             <input type="email" name="email" id="email">
-             <label for="phone">Phone</label>
-             <input type="tel" name="phone" id="phone">
-             <label for="company">Company</label>
-             <input type="text" name="company" id="company">
-             <legend>Professional Information</legend>
-             <label for="linedin">LinkedIN</label>
-             <input type="text" name="linkedIn" id="linkedin">
-             <label for="website">Website</label>
-             <input type="url" name="website" id="website">
-             <label for="twitter">Twitter</label>
-             <input type="url" name="twitter" id="twitter">
-             <label for="instagram">Instagram</label>
-             <input type="url" name="instagram" id="instagram">
-             <label for="other-url">Other URL</label>
-             <input type="url" name="otherUrl" id="other-url">
-             <legend>General Q</legend>
-             <textarea name="generalQ" id="general-q"></textarea>
-             <legend>Yes or No Section</legend>
-             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer?</p>
-             <label for="question-one-yes">Yes</label>
-             <input type="radio" name="question one" id="question-one-yes" value="true">
-             <p>Lorem ipsum dolor sit amet, consectetuer?</p>
-             <label for="question-one-no">No</label>
-             <input type="radio" name="question one" id="question-one-no" value="false">
-            <h2>Resume</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
-            <label for="cv">Drop down you file here
-                or</label>
-            <input class="file-input" type="file" name="cv" id="cv">
-            
-            <button class="form-btn" type="submit">Send application</button>
-        </form>
-     </section>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <form id="application-form" action="javascript:void(0)">
+                    <div class="form-section">
+                        <h3 class="bold">Basic information</h3>
+                        <div class="form-group">
+                            <label  for="first-name">First Name</label>
+                            <input  type="text" id="first-name" name="firstName">
+                            <span class="required">*</span>
+                        </div>
+                        <div class="form-group">
+
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="lastName">
+                            <span class="required">*</span>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                            <span class="required">*</span>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone">
+                            <span class="required">*</span>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="company">Company</label>
+                            <input type="text" name="company" id="company">
+                            <div class="ghost"></div>
+
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h3 class="bold">Professional Information</h3>
+                        <div class="form-group">
+
+                            <label for="linedin">LinkedIN</label>
+                            <input type="text" name="linkedIn" id="linkedin">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="website">Website</label>
+                            <input type="url" name="website" id="website">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="twitter">Twitter</label>
+                            <input type="url" name="twitter" id="twitter">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="instagram">Instagram</label>
+                            <input type="url" name="instagram" id="instagram">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="other-url">Other URL</label>
+                            <input type="url" name="otherUrl" id="other-url">
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <h3 class="bold">General Q</h3>
+
+                        <textarea name="generalQ" id="general-q"></textarea>
+                    </div>
+                    <h3 class="bold">Yes or No Section</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer?</p>
+
+                    <label for="question-one-yes">Yes</label>
+
+                    <input type="radio" name="question one" id="question-one-yes" value="true">
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer?</p>
+
+                    <label for="question-one-no">No</label>
+
+                    <input type="radio" name="question one" id="question-one-no" value="false">
+
+                    <h2>Resume</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+
+                    <label for="cv">Drop down you file hereor</label>
+
+                    <input class="file-input" type="file" name="cv" id="cv">
+
+                    <button class="form-btn" type="submit">Send application</button>
+                </form>
+            </div>
+        </section>
     </main>
     <!-- footer start -->
     <footer id="footer">
