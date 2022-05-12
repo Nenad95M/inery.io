@@ -139,6 +139,23 @@ ul {
     padding: 1rem;
 }
 
+#jobs-section .job-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#jobs-section .filter-card {
+    background: #3B3B3B33;
+    border: none;
+    cursor: pointer;
+}
+#jobs-section .filter-card:hover {
+    background: #82828233;
+
+}
 #jobs-section .apply-btn {
     background-color: #3B3B3B;
     color: #FFFFFF;
@@ -147,8 +164,14 @@ ul {
     padding: 0.5rem 5rem;
     text-align: center;
 }
-
-#jobs-section .apply-btn:hover {
+#jobs-section .active {
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+}
+#jobs-section .active:hover {
+    color: #3B3B3B;
+}
+    #jobs-section .apply-btn:hover {
     background-color: #595757;
 }
 
@@ -169,7 +192,7 @@ ul {
     display: flex;
     justify-content: flex-start;
     gap: 0.5rem;
-  
+
 }
 
 #jobs-section .info-group {
@@ -206,7 +229,8 @@ ul {
 #jobs-section .office {
     background: #C1C1C1;
 }
-#jobs-section .all-jobs{
+
+#jobs-section .all-jobs {
     text-align: center;
     text-decoration: underline;
     margin-top: 2rem;
@@ -389,6 +413,8 @@ ul {
     border: none;
     border-bottom: 1px solid #FFFFFF;
     padding: 1rem;
+    background: url('/assets/img/arrow.png') center right no-repeat ;
+
 }
 
 #subscribe .user-input input::placeholder {
