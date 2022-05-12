@@ -13,7 +13,6 @@ a {
     text-decoration: none;
 }
 
-
 ul {
     list-style: none;
 }
@@ -62,9 +61,7 @@ ul {
     color: #FFFFFF;
     width: 70%;
     margin: 1rem;
-
 }
-
 
 #header .text h1 {
     font-weight: 700;
@@ -129,18 +126,20 @@ ul {
 }
 
 /* Jobs Section */
-#jobs-section .jobs-container{
+#jobs-section .jobs-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    
+
 }
-#jobs-section .job-card{
+
+#jobs-section .job-card {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
-#jobs-section .apply-btn{
+
+#jobs-section .apply-btn {
     background-color: #3B3B3B;
     color: #FFFFFF;
     font-weight: 700;
@@ -148,51 +147,72 @@ ul {
     padding: 0.5rem 5rem;
     text-align: center;
 }
-#jobs-section .apply-btn:hover{
+
+#jobs-section .apply-btn:hover {
     background-color: #595757;
 }
-#jobs-section .meta-info{
+
+#jobs-section .meta-info {
     display: flex;
     justify-content: space-between;
 }
-#jobs-section .text-block{
+
+#jobs-section .text-block {
     padding: 2rem 1rem;
 }
-#jobs-section .text-block h3{
-padding: 1rem;
+
+#jobs-section .text-block h3 {
+    padding: 1rem;
 }
-#jobs-section .spacetime{
+
+#jobs-section .spacetime {
     display: flex;
     justify-content: flex-start;
     gap: 0.5rem;
+  
 }
-#jobs-section .info-group{
+
+#jobs-section .info-group {
     display: flex;
     gap: 0.5rem;
     font-size: small;
 }
-#jobs-section .long-time-ago{
+
+#jobs-section .long-time-ago {
     padding: 0.5rem;
 }
-#jobs-section .category{
-    padding:  0.5rem 2.5rem;
+
+#jobs-section .category {
+    padding: 0.5rem 2.5rem;
     font-size: 1rem;
+    text-align: center;
 }
-#jobs-section .front-end{
+
+#jobs-section .front-end {
     background: #00FFFF;
 
 }
-#jobs-section .blockchain{
+
+#jobs-section .blockchain {
     background: #A4FF84;
 
 }
-#jobs-section .back-end{
+
+#jobs-section .back-end {
     background: #C1A4FF;
 
 }
-#jobs-section .office{
+
+#jobs-section .office {
     background: #C1C1C1;
 }
+#jobs-section .all-jobs{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
 /* End of Jobs Section */
 /* Offer section */
 #our-offer {

@@ -2,9 +2,11 @@
 #header .text {
   width: 90%;
 }
-#header .logo{
+
+#header .logo {
   top: 1.5rem;
 }
+
 #header .button {
   display: block;
   padding: 0.4rem 7rem !important;
@@ -13,10 +15,12 @@
 #header .button-glow {
   box-shadow: none;
 }
+
 /* Jobs Section */
-#jobs-section .jobs-container{
-grid-template-columns: 1fr;
+#jobs-section .jobs-container {
+  grid-template-columns: 1fr;
 }
+
 /* End of Jobs Section */
 
 
@@ -107,12 +111,9 @@ grid-template-columns: 1fr;
   border-bottom: 0.5px solid #3B3B3B;
 }
 
-
 #cv {
   border: 1px solid #3B3B3B;
 }
-
-
 
 #application-form .required {
   display: none;
@@ -141,38 +142,49 @@ grid-template-columns: 1fr;
   display: grid;
   justify-content: center;
 }
+/*Jobs Section*/
+#jobs-section .category{
+  padding: 0.25rem 1.5rem;
+}
 /*Subscribe*/
 #subscribe {
   background: url(/assets/img/header-img.png) no-repeat center center/cover;
   background-size: cover;
   flex-direction: column-reverse;
   gap: 1rem;
-  justify-content:center;
+  justify-content: center;
   grid-template-columns: 1fr;
 }
+
 #subscribe .letter {
   display: flex;
   justify-content: center;
 }
-#subscribe .user-input p{
+
+#subscribe .user-input p {
   text-align: center;
   width: 80%;
 }
-#subscribe .user-input input{
+
+#subscribe .user-input input {
   width: 80%;
 }
+
 #subscribe .letter img {
   display: inherit;
   /* width: 50%; */
 }
+
 /*end of subscribe*/
 /* footer */
 #footer .footer-container {
   grid-template-columns: 1fr;
 }
-#footer .footer-container>*:last-child{
-display: none;
+
+#footer .footer-container>*:last-child {
+  display: none;
 }
+
 #footer .footer-container section {
   text-align: center;
 }
