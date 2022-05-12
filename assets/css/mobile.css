@@ -13,6 +13,11 @@
 #header .button-glow {
   box-shadow: none;
 }
+/* Jobs Section */
+#jobs-section .jobs-container{
+grid-template-columns: 1fr;
+}
+/* End of Jobs Section */
 
 
 /* our offer */
