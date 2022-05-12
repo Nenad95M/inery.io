@@ -58,33 +58,30 @@
         </section>
 
         <div class="container">
-            <form id="application-form" action="javascript:void(0)">
+            <form id="application-form" method="post" action="">
                 <div class="form-section">
                     <h3 class="bold">Basic information</h3>
                     <div class="form-group">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="firstName">
+                        <input required type="text" id="first-name" name="firstName">
                         <!-- <span class="required">*</span> -->
                     </div>
                     <div class="form-group">
 
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="lastName">
-                        <!-- <span class="required">*</span> -->
+                        <input required type="text" id="last-name" name="lastName">
                     </div>
 
                     <div class="form-group">
 
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                        <!-- <span class="required">*</span> -->
+                        <input required type="email" name="email" id="email">
                     </div>
 
                     <div class="form-group">
 
                         <label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone">
-                        <!-- <span class="required">*</span> -->
+                        <input required type="tel" name="phone" id="phone">
 
                     </div>
 
@@ -92,7 +89,6 @@
 
                         <label for="company">Company</label>
                         <input type="text" name="company" id="company">
-                        <!-- <div class="ghost"></div> -->
 
                     </div>
                 </div>
@@ -101,7 +97,7 @@
                     <div class="form-group">
 
                         <label for="linedin">LinkedIN</label>
-                        <input type="text" name="linkedIn" id="linkedin">
+                        <input required type="url" name="linkedIn" id="linkedin">
                     </div>
 
                     <div class="form-group">
@@ -131,7 +127,7 @@
                 <div class="form-section">
                     <h3 class="bold">General Q</h3>
 
-                    <textarea name="generalQ" id="general-q"></textarea>
+                    <textarea required name="generalQ" id="general-q"></textarea>
                 </div>
                 <h3 class="bold">Yes or No Section</h3>
 
@@ -156,7 +152,7 @@
 
                 <label for="cv">Drop down you file hereor</label>
 
-                <input class="file-input" type="file" name="cv" id="cv">
+                <input required class="file-input" type="file" name="cv" id="cv">
 
                 <button class="form-btn" type="submit">Send application</button>
             </form>
@@ -209,10 +205,9 @@
         </section>
     </footer>
     <!-- footer end -->
-</body>
-
-</html>
+    <script src="/assets/js/app.js"></script>
 
 </body>
 
 </html>
+
