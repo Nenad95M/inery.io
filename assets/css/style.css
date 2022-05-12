@@ -28,7 +28,9 @@ ul {
 .bold {
     font-weight: bold;
 }
-
+.ghost{
+    display: none !important; 
+}
 /* header start */
 #header {
     background: url('/assets/img/header-img.png') no-repeat center center/cover;
