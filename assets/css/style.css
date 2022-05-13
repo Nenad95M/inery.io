@@ -3,9 +3,9 @@
     padding: 0;
     margin: 0;
 }
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -366,7 +366,14 @@ ul {
   #application-form  .resume-section{
       margin-top: 3rem;
   }
-      
+  #application-form .cv{
+     margin: 1px solid #3B3B3B;
+     padding: 5rem;
+ } 
+
+     #application-form .file-input{
+        visibility: hidden;
+     } 
   #application-form .btn-holder{
       display: flex;
       justify-content: center;

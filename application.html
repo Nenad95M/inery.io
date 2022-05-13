@@ -21,7 +21,7 @@
     <!-- header -->
     <header id="header">
         <div class="logo">
-            <a href="index.html"> <img src="/assets/img/logo.png" alt="logo"></a> 
+            <a href="index.html"> <img src="/assets/img/logo.png" alt="logo"></a>
         </div>
         <div class="header-container">
 
@@ -39,7 +39,7 @@
     </header>
     <!-- header end -->
     <main>
-     
+
         <section id="react-native">
             <h2>React-Native Developer</h2>
             <div class="container">
@@ -61,116 +61,119 @@
         </section>
 
         <div class="container">
-            <form id="application-form" method="post" action="#">
+            <form id="application-form" action="">
                 <div class="form-container">
-                <div class="form-section">
-                    <h3 class="bold">Basic information</h3>
-                    <div class="form-group">
-                        <label for="first-name">First Name</label>
-                        <input required type="text" id="first-name" name="firstName">
+                    <div class="form-section">
+                        <h3 class="bold">Basic information</h3>
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input minlength="3" maxlength="20" required type="text" id="first-name" name="firstName">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="last-name">Last Name</label>
+                            <input minlength="3" maxlength="20" required type="text" id="last-name" name="lastName">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="email">Email</label>
+                            <input required type="email" name="email" id="email">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="phone">Phone</label>
+                            <input required type="tel" name="phone" id="phone">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="company">Company</label>
+                            <input type="text" name="company" id="company">
+
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-section">
+                        <h3 class="bold form-title">Professional Information</h3>
+                        <div class="form-group">
 
-                        <label for="last-name">Last Name</label>
-                        <input required type="text" id="last-name" name="lastName">
+                            <label for="linkedin">LinkedIN</label>
+                            <input required type="url" name="linkedIn" id="linkedin">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="website">Website</label>
+                            <input type="url" name="website" id="website">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="twitter">Twitter</label>
+                            <input type="url" name="twitter" id="twitter">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="instagram">Instagram</label>
+                            <input type="url" name="instagram" id="instagram">
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="other-url">Other URL</label>
+                            <input type="url" name="otherUrl" id="other-url">
+                        </div>
                     </div>
+                    <div class="form-section">
+                        <h3 class="bold form-title">General Q</h3>
 
-                    <div class="form-group">
-
-                        <label for="email">Email</label>
-                        <input required type="email" name="email" id="email">
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="phone">Phone</label>
-                        <input required type="tel" name="phone" id="phone">
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="company">Company</label>
-                        <input type="text" name="company" id="company">
-
+                        <textarea minlength="6" maxlength="400" required name="generalQ" id="general-q"></textarea>
                     </div>
                 </div>
-                <div class="form-section">
-                    <h3 class="bold form-title">Professional Information</h3>
-                    <div class="form-group">
-
-                        <label for="linkedin">LinkedIN</label>
-                        <input required type="url" name="linkedIn" id="linkedin">
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="website">Website</label>
-                        <input type="url" name="website" id="website">
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="twitter">Twitter</label>
-                        <input type="url" name="twitter" id="twitter">
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="instagram">Instagram</label>
-                        <input type="url" name="instagram" id="instagram">
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="other-url">Other URL</label>
-                        <input type="url" name="otherUrl" id="other-url">
-                    </div>
-                </div>
-                <div class="form-section">
-                    <h3 class="bold form-title">General Q</h3>
-
-                    <textarea required name="generalQ" id="general-q"></textarea>
-                </div>
-            </div>
                 <div class="radioSection">
-                <h3 class="bold form-title">Yes or No Section</h3>
+                    <h3 class="bold form-title">Yes or No Section</h3>
 
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat.</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetuer?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer?</p>
 
-                <div class="radio-group">
-                <label for="question-one-yes">Yes</label>
-                <input type="radio" name="question-one" id="question-one-yes" value="true">
+                    <div class="radio-group">
+                        <label for="question-one-yes">Yes</label>
+                        <input type="radio" name="question-one" id="question-one-yes" value="true">
 
-                <label for="question-one-no">No</label>
-                <input type="radio" name="question-one" id="question-one-no" value="false">
-            </div>
+                        <label for="question-one-no">No</label>
+                        <input type="radio" name="question-one" id="question-one-no" value="false">
+                    </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetuer?</p>
-                <div class="radio-group">
+                    <p>Lorem ipsum dolor sit amet, consectetuer?</p>
+                    <div class="radio-group">
 
-                <label for="question-two-yes">Yes</label>
+                        <label for="question-two-yes">Yes</label>
 
-                <input type="radio" name="question-two" id="question-two-yes" value="true">
+                        <input type="radio" name="question-two" id="question-two-yes" value="true">
 
-                <label for="question-one-no">No</label>
-                <input type="radio" name="question-two" id="question-two-no" value="false">
-            </div>
-      <div class="resume-section">
-                <h2 class="bold form-title">Resume</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                    ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+                        <label for="question-one-no">No</label>
+                        <input type="radio" name="question-two" id="question-two-no" value="false">
+                    </div>
+                    <div class="resume-section">
+                        <h2 class="bold form-title">Resume</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt
+                            ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
 
-                <label for="cv">Drop down you file hereor</label>
+                        <div>CV</div> <label class="cv" for="cv">Drop down you file here</label>
 
-                <input required class="file-input" type="file" name="cv" id="cv">
-          <div class="btn-holder">
-                <button class="form-btn" type="submit">Send application</button>
-            </div>
-            </div>
-        </div>
+                        <input required class="file-input" type="file" name="cv">
+                        <div class="btn-holder">
+                            <button class="form-btn"  type="submit">Send application</button>
+                        </div>
+                    </div>
+                </div>
+
             </form>
         </div>
     </main>
@@ -222,8 +225,13 @@
     </footer>
     <!-- footer end -->
     <script src="/assets/js/app.js"></script>
-
+<script>
+const forma= document.getElementById('application-form');
+forma.addEventListener('submit',function(e){
+console.log("Submitovano");
+    e.preventDefault();
+})
+</script>
 </body>
 
 </html>
-
