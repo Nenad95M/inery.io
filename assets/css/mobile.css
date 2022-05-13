@@ -117,14 +117,16 @@
   border: none;
   border-bottom: 0.5px solid #3B3B3B;
 }
+#application-form .btn-holder{
+display: block;
+width: 80%;
 
+}
 #cv {
   border: 1px solid #3B3B3B;
 }
 
-#application-form .required {
-  display: none;
-}
+
 
 /*end of form*/
 /*similar offers*/
@@ -152,6 +154,12 @@
 /*Jobs Section*/
 #jobs-section .category{
   padding: 0.25rem 1.5rem;
+}
+#jobs-section .circles{
+display: grid;
+align-items: center;
+justify-content: center;
+padding: 2rem 0;
 }
 /*Subscribe*/
 #subscribe {
