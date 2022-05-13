@@ -1,50 +1,73 @@
+//filtriranje poslova po kategorijama
 const jobFilter= function(){
-const allJobs = document.getElementById("all-jobs");
+const allJobsBtn = document.getElementById("all-jobs");
 const blockchainJobs = document.getElementById("blockchain-jobs");
 const frontEndJobs = document.getElementById("front-end-jobs");
 const backEndJobs = document.getElementById("back-end-jobs");
+const filterButtons=Array.from(document.querySelector('.job-filter').children);
+console.log(filterButtons);
 let jobsContainer = document
   .getElementById("jobs-container")
   .getElementsByClassName("job-card");
 
 jobsContainer = Array.from(jobsContainer);
 
-allJobs.addEventListener("click", displayAll);
+
+function removeActive(){
+  filterButtons.forEach(element => {
+  if(element.classList.contains('active')){
+    element.classList.remove('active');
+  }
+  });
+}
+function addActive(e){
+  e.target.classList.add('active');
+console.log(e.target.classList);
+}
 
 function displayAll() {
   jobsContainer.forEach((element) => {
     element.style.display = "flex";
   });
 }
-
-blockchainJobs.addEventListener("click", function () {
+function takeCareOfDOM(e){
+  removeActive();
+  addActive(e);
   displayAll();
+}
+function jobCategoryFilter(jobCategory){
   jobsContainer.forEach((element) => {
-    if (element.getAttribute("data-category") !== "blockchain") {
+    if (element.getAttribute("data-category") !== jobCategory) {
       element.style.display = "none";
     }
   });
+}
+allJobsBtn.addEventListener('click',function(e){
+  takeCareOfDOM(e);
+})
+
+blockchainJobs.addEventListener("click", function (e) {
+  takeCareOfDOM(e);
+  let jobCategory="blockchain";
+  jobCategoryFilter(jobCategory);
+
 });
 
-frontEndJobs.addEventListener("click", function () {
-  displayAll();
-  jobsContainer.forEach((element) => {
-    if (element.getAttribute("data-category") !== "front-end") {
-      element.style.display = "none";
-    }
-  });
+frontEndJobs.addEventListener("click", function (e) {
+  takeCareOfDOM(e);
+  let jobCategory="front-end";
+  jobCategoryFilter(jobCategory);
 });
-backEndJobs.addEventListener("click", function () {
-  displayAll();
-  jobsContainer.forEach((element) => {
-    if (element.getAttribute("data-category") !== "back-end") {
-      element.style.display = "none";
-    }
-  });
+
+backEndJobs.addEventListener("click", function (e) {
+  takeCareOfDOM(e);
+  let jobCategory="back-end";
+  jobCategoryFilter(jobCategory);
 });
 }
-
+//Simulacija fecovanja dodatnih poslova iz neke baze
 const moreJobs=function(){
+  //da bi se api samo jednom pozvao
  let called=false
   function callApi() {
     fetch('/databaseSimulation/data.json').then(response => response.json()).then(data => {
@@ -89,8 +112,19 @@ const moreJobs=function(){
 
 document.getElementById("show-all-jobs").addEventListener('click', callApi)
 }
+// validacija subscribe inputa
+const subscribeValidation=function(){
+ const subscribeForm=document.getElementById('subscribe-form');
+ subscribeForm.addEventListener('invalid', function(e){
+   console.log('invalid');
+   e.preventDefault;
+ })
+}
 
+//proveravam da li html fajl sadrzi elemente sa kojima rade selektori
+//ako sadrzi funkcije se inicijalizuju
 if(document.getElementById("jobs-container")){
     jobFilter();
     moreJobs();
 }
+
