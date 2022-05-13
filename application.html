@@ -59,6 +59,7 @@
 
         <div class="container">
             <form id="application-form" method="post" action="">
+                <div class="form-container">
                 <div class="form-section">
                     <h3 class="bold">Basic information</h3>
                     <div class="form-group">
@@ -92,7 +93,7 @@
                     </div>
                 </div>
                 <div class="form-section">
-                    <h3 class="bold">Professional Information</h3>
+                    <h3 class="bold form-title">Professional Information</h3>
                     <div class="form-group">
 
                         <label for="linedin">LinkedIN</label>
@@ -124,26 +125,28 @@
                     </div>
                 </div>
                 <div class="form-section">
-                    <h3 class="bold">General Q</h3>
+                    <h3 class="bold form-title">General Q</h3>
 
                     <textarea required name="generalQ" id="general-q"></textarea>
                 </div>
-                <h3 class="bold">Yes or No Section</h3>
+            </div>
+                <div class="radioSection">
+                <h3 class="bold form-title">Yes or No Section</h3>
 
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                    ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 
                 <p>Lorem ipsum dolor sit amet, consectetuer?</p>
 
+                <div class="radio-group">
                 <label for="question-one-yes">Yes</label>
-
                 <input type="radio" name="question-one" id="question-one-yes" value="true">
 
                 <label for="question-one-no">No</label>
-
                 <input type="radio" name="question-one" id="question-one-no" value="false">
+            </div>
 
                 <p>Lorem ipsum dolor sit amet, consectetuer?</p>
+                <div class="radio-group">
 
                 <label for="question-two-yes">Yes</label>
 
@@ -151,16 +154,20 @@
 
                 <label for="question-one-no">No</label>
                 <input type="radio" name="question-two" id="question-two-no" value="false">
-
-                <h2>Resume</h2>
+            </div>
+      <div class="resume-section">
+                <h2 class="bold form-title">Resume</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
                     ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
 
                 <label for="cv">Drop down you file hereor</label>
 
                 <input required class="file-input" type="file" name="cv" id="cv">
-
+          <div class="btn-holder">
                 <button class="form-btn" type="submit">Send application</button>
+            </div>
+            </div>
+        </div>
             </form>
         </div>
     </main>

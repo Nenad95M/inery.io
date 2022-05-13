@@ -330,7 +330,7 @@ ul {
 }
 
 /*form*/
-#application-form {
+#application-form .form-container {
     width: 50%;
 }
 
@@ -354,14 +354,34 @@ ul {
     height: 12rem;
     resize: none;
 }
+#application-form .radioSection{
+  width: 90%;
+}
 
+#application-form .radio-group{
+  display: grid;
+  grid-template-columns:2rem 2rem;
+  align-items: center;
+  }
+  #application-form  .resume-section{
+      margin-top: 3rem;
+  }
+      
+  #application-form .btn-holder{
+      display: flex;
+      justify-content: center;
 
+  }
+  #application-form .form-title{
+      padding: 1rem;
+  }
 #application-form .form-btn {
     background-color: #3B3B3B;
     color: #FFFFFF;
     font-weight: 700;
     margin-top: 2rem;
     padding: 0.5rem 7rem;
+ 
 }
 
 #application-form .form-btn:hover {
@@ -391,7 +411,7 @@ ul {
 
 #subscribe .letter img {
     display: none;
-    width: 50%;
+    max-width: 35%;
 }
 
 #subscribe .user-input {

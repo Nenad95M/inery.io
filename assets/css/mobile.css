@@ -98,6 +98,13 @@
   text-align: center;
 
 }
+#application-form .form-container{
+  width: 100%;
+}
+#application-form .radioSection{
+  text-align: center;
+  width: 100%;
+}
 
 #application-form .form-group {
   text-align: center;
