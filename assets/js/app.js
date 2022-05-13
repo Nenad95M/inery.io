@@ -24,7 +24,7 @@ const jobFilter = function () {
     }
     function removeActive() {
       filterButtons.forEach((element) => {
-          element.classList.remove("active");
+        element.classList.remove("active");
       });
     }
     removeActive();
@@ -64,17 +64,18 @@ const jobFilter = function () {
 const moreJobs = function () {
   let called = false;
   //da bi se api samo jednom pozvao
+  //nakon prvog poziva ce biti true
   function callApi() {
     if (called == false) {
-    fetch("/databaseSimulation/data.json")
-      .then((response) => response.json())
-      .then((data) => {
+      fetch("/databaseSimulation/data.json")
+        .then((response) => response.json())
+        .then((data) => {
           makeUI(data["jobs"]);
           jobFilter();
           called = true;
-      });
+        });
+    }
   }
-}
   const ui = document.getElementById("jobs-container");
 
   function makeUI(data) {
@@ -106,22 +107,23 @@ const moreJobs = function () {
   }
 
   document.getElementById("show-all-jobs").addEventListener("click", callApi);
+  document.getElementById("touchCircle").addEventListener("touchstart",callApi);
 };
-
-//dinamicno ubacujem sadrzaj u html
-const showEvenMoreJobs=function() {
+// ponovo simulacija sa baze za job-description stranu
+const showEvenMoreJobs = function () {
   let called = false;
   //da bi se api samo jednom pozvao
+  //nakon prvog poziva ce biti true
   function callApi() {
     if (called == false) {
-    fetch("/databaseSimulation/data.json")
-      .then((response) => response.json())
-      .then((data) => {
+      fetch("/databaseSimulation/data.json")
+        .then((response) => response.json())
+        .then((data) => {
           makeUI(data["jobs"]);
           called = true;
-      });
+        });
+    }
   }
-}
   const ui = document.getElementById("job-table");
   function makeUI(data) {
     data.forEach((element) => {
@@ -145,8 +147,7 @@ const showEvenMoreJobs=function() {
   }
 
   document.getElementById("all-jobs").addEventListener("click", callApi);
-
-} 
+};
 
 //proveravam da li html fajl sadrzi elemente sa kojima rade selektori
 //ako sadrzi funkcije se inicijalizuju
@@ -154,6 +155,6 @@ if (document.getElementById("jobs-container")) {
   jobFilter();
   moreJobs();
 }
-if(document.getElementById("job-table")) {
+if (document.getElementById("job-table")) {
   showEvenMoreJobs();
 }
