@@ -502,7 +502,12 @@ ul {
     width: 80px;
     height: 80px;
 }
-
+#similar-offers .php-img {
+    background: url('/assets/img/similarOffers/php.png') no-repeat center;
+    background-color: #336FAA;
+    width: 80px;
+    height: 80px;
+}
 #similar-offers .all-jobs {
     text-align: center;
     text-decoration: underline;

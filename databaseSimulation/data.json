@@ -3,6 +3,7 @@
        {     "category":"back-end",
              "title":"Junior PHP Developer",
              "job":"BackEnd",
+             "language":"php",
              "location":"Kragujevac/Serbia",
              "level":"Junior",
              "time":"Full-time"
@@ -10,6 +11,7 @@
        {"category":"back-end",
         "title":"Junior PHP Developer",
         "job":"BackEnd",
+        "language":"php",
         "location":"Remote",
         "level":"Junior",
         "time":"Full-time"   

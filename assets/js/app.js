@@ -128,7 +128,7 @@ const showEvenMoreJobs=function() {
     data.forEach((element) => {
       ui.innerHTML += `<div class="row">
       <div class="job-avatar">
-          <div class="js-img"></div>
+          <div class="${element.language}-img"></div>
           <div class="job-title">
               <h3>${element.title}</h3>
               <small>${element.job}</small>
