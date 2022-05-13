@@ -16,7 +16,6 @@ const jobFilter = function () {
   function takeCareOfDOM(e) {
     function addActive(e) {
       e.target.classList.add("active");
-      console.log(e.target.classList);
     }
     function displayAll() {
       jobsContainer.forEach((element) => {
