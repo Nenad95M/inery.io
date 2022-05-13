@@ -131,7 +131,7 @@ const showEvenMoreJobs=function() {
           <div class="js-img"></div>
           <div class="job-title">
               <h3>${element.title}</h3>
-              <small>Front-End</small>
+              <small>${element.job}</small>
           </div>
       </div>
       <div class="location"><img draggable="false" src="/assets/img/similarOffers/location-remote.png"
