@@ -1,11 +1,12 @@
+/* css je organizovan prema sekcijama na HTML stranama,
+ klase su ugnjezdene u ID sekcije, 
+ izuzetak su klase koje se koriste svuda */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-/* html{
-    scroll-behavior: smooth;
-} */
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -30,12 +31,15 @@ ul {
 .bold {
     font-weight: bold;
 }
-.ghost{
-    display: none !important; 
+
+.ghost {
+    display: none !important;
 }
-.error{
+
+.error {
     border: 1px solid red;
 }
+
 /* header start */
 #header {
     background: url('/assets/img/header-img.png') no-repeat center center/cover;
@@ -159,10 +163,12 @@ ul {
     border: none;
     cursor: pointer;
 }
+
 #jobs-section .filter-card:hover {
     background: #82828233;
 
 }
+
 #jobs-section .apply-btn {
     background-color: #3B3B3B;
     color: #FFFFFF;
@@ -171,14 +177,17 @@ ul {
     padding: 0.5rem 5rem;
     text-align: center;
 }
+
 #jobs-section .active {
     background-color: #3B3B3B;
     color: #FFFFFF;
 }
+
 #jobs-section .active:hover {
     color: #3B3B3B;
 }
-    #jobs-section .apply-btn:hover {
+
+#jobs-section .apply-btn:hover {
     background-color: #595757;
 }
 
@@ -243,9 +252,11 @@ ul {
     margin-top: 2rem;
     cursor: pointer;
 }
-#jobs-section .circles{
-display: none;
+
+#jobs-section .circles {
+    display: none;
 }
+
 /* End of Jobs Section */
 /* Offer section */
 #our-offer {
@@ -359,47 +370,52 @@ display: none;
     height: 12rem;
     resize: none;
 }
-#application-form .radioSection{
-  width: 90%;
+
+#application-form .radioSection {
+    width: 90%;
 }
 
-#application-form .radio-group{
-  display: grid;
-  grid-template-columns:2rem 2rem;
-  align-items: center;
-  }
-  #application-form  .resume-section{
-      margin-top: 3rem;
-  }
-
-#application-form  .input-file-btn {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: fit-content;
-border: 1px solid #001C55;
+#application-form .radio-group {
+    display: grid;
+    grid-template-columns: 2rem 2rem;
+    align-items: center;
 }
-#application-form .file-input{
+
+#application-form .resume-section {
+    margin-top: 3rem;
+}
+
+#application-form .input-file-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border: 1px solid #001C55;
+}
+
+#application-form .file-input {
     opacity: 0;
 }
 
-  #application-form .btn-holder{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+#application-form .btn-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  }
-  #application-form .form-title{
-      padding: 1rem;
-  }
+}
+
+#application-form .form-title {
+    padding: 1rem;
+}
+
 #application-form .form-btn {
     background-color: #3B3B3B;
     color: #FFFFFF;
     font-weight: 700;
     margin-top: 2rem;
     padding: 0.5rem 7rem;
- 
+
 }
 
 #application-form .form-btn:hover {
@@ -451,7 +467,7 @@ border: 1px solid #001C55;
     border: none;
     border-bottom: 1px solid #FFFFFF;
     padding: 1rem;
-    background: url('/assets/img/arrow.png') center right no-repeat ;
+    background: url('/assets/img/arrow.png') center right no-repeat;
 
 }
 
@@ -516,12 +532,14 @@ border: 1px solid #001C55;
     width: 80px;
     height: 80px;
 }
+
 #similar-offers .php-img {
     background: url('/assets/img/similarOffers/php.png') no-repeat center;
     background-color: #336FAA;
     width: 80px;
     height: 80px;
 }
+
 #similar-offers .all-jobs {
     text-align: center;
     text-decoration: underline;

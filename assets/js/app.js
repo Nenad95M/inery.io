@@ -1,7 +1,3 @@
-//google recaptcha
-function recaptchaCallback() {
-  document.getElementById("submitFormBTN").removeAttribute("disabled");
-}
 //filtriranje poslova po kategorijama
 const jobFilter = function () {
   const allJobsBtn = document.getElementById("all-jobs");
@@ -35,6 +31,7 @@ const jobFilter = function () {
     addActive(e);
     displayAll();
   }
+  //za filtriranje koristim atribut data-category koji sam napravio u HTML-u
   function jobCategoryFilter(jobCategory) {
     jobsContainer.forEach((element) => {
       if (element.getAttribute("data-category") !== jobCategory) {
@@ -64,6 +61,7 @@ const jobFilter = function () {
     jobCategoryFilter(jobCategory);
   });
 };
+
 //Simulacija fecovanja dodatnih poslova iz neke baze
 const moreJobs = function () {
   let called = false;
@@ -115,6 +113,7 @@ const moreJobs = function () {
     .getElementById("touchCircle")
     .addEventListener("touchstart", callApi);
 };
+
 // ponovo simulacija sa baze za job-description stranu
 const showEvenMoreJobs = function () {
   let called = false;
@@ -156,7 +155,8 @@ const showEvenMoreJobs = function () {
 };
 
 //proveravam da li html fajl sadrzi elemente sa kojima rade selektori
-//ako sadrzi funkcije se inicijalizuju
+//ako sadrzi funkcije se inicijalizuju,
+// ovo koristim kako bih izbegao greske u konzoli zbog id selektora koji ne postoje na drugim stranama
 if (document.getElementById("jobs-container")) {
   jobFilter();
   moreJobs();
