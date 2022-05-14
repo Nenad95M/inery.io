@@ -383,6 +383,7 @@ border: 1px solid #001C55;
 
   #application-form .btn-holder{
       display: flex;
+      flex-direction: column;
       justify-content: center;
 
   }

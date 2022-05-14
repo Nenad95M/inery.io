@@ -1,3 +1,7 @@
+//google recaptcha
+function onSubmit(token) {
+  document.getElementById("application-form").submit();
+}
 //filtriranje poslova po kategorijama
 const jobFilter = function () {
   const allJobsBtn = document.getElementById("all-jobs");
