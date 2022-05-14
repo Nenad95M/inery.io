@@ -9,6 +9,8 @@
     laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad">
 
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon/favicon.png">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <title>Application</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,31 +74,31 @@
                         <h3 class="bold">Basic information</h3>
                         <div class="form-group">
                             <label for="first-name">First Name</label>
-                            <input minlength="3" maxlength="20" autocomplete="off" required type="text" id="first-name" name="firstName">
+                            <input class="required"  type="text" id="first-name" name="firstName">
                         </div>
                         <div class="form-group">
 
                             <label for="last-name">Last Name</label>
-                            <input minlength="3" maxlength="20" autocomplete="off"  required type="text" id="last-name" name="lastName">
+                            <input class="required"    type="text" id="last-name" name="lastName">
                         </div>
 
                         <div class="form-group">
 
                             <label for="email">Email</label>
-                            <input required type="email" autocomplete="off"  name="email" id="email">
+                            <input class="required"  type="email"   name="email" id="email">
                         </div>
 
                         <div class="form-group">
 
                             <label for="phone">Phone</label>
-                            <input required type="tel" autocomplete="off" name="phone" id="phone">
+                            <input class="required"  type="tel"  name="phone" id="phone">
 
                         </div>
 
                         <div class="form-group">
 
                             <label for="company">Company</label>
-                            <input type="text" autocomplete="off" name="company" id="company">
+                            <input type="text"  name="company" id="company">
 
                         </div>
                     </div>
@@ -105,7 +107,7 @@
                         <div class="form-group">
 
                             <label for="linkedin">LinkedIN</label>
-                            <input required type="url" autocomplete="off" name="linkedIn" id="linkedin">
+                            <input class="required"  type="url" autocomplete="off" name="linkedIn" id="linkedin">
                         </div>
 
                         <div class="form-group">
@@ -135,7 +137,7 @@
                     <div class="form-section">
                         <h3 class="bold form-title">General Q</h3>
 
-                        <textarea minlength="6" maxlength="400" required name="generalQ" id="general-q"></textarea>
+                        <textarea  name="generalQ" id="general-q"></textarea>
                     </div>
                 </div>
                 <div class="radioSection">
@@ -171,16 +173,12 @@
                             ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
                         <div class="cv">
                       <label class="input-file-btn" for="cv">Upload file here
-                        <input required class="file-input" type="file" name="jobApplication">
+                        <input  class="file-input" type="file" id="jobApplication" name="jobApplication">
                     </label>
                     </div>
                     <div class="btn-holder">
-                        <button class="g-recaptcha form-btn" 
-                        data-sitekey="6LcP7usfAAAAAAyZuBYnkP8Zn7UvAW5axQpEX1z8" 
-                        data-callback='onSubmit' 
-                        data-action='submit' type="submit">Send application</button>
-                        <div id="recaptcha" class="g-recaptcha"  data-sitekey="6LcP7usfAAAAAAyZuBYnkP8Zn7UvAW5axQpEX1z8"></div>
-
+                        <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6Ld6auwfAAAAACceKAHBgox1zOEb0PHVNkMJpPhX"></div>
+                        <button id="submitFormBTN" disabled class="form-btn" type="submit">Send application</button>
                     </div>
                     </div>
                 </div>
@@ -236,8 +234,7 @@
         </section>
     </footer>
     <!-- footer end -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-
+<script src="/assets/js/form-validation.js"></script>
     <script src="/assets/js/app.js"></script>
 
 

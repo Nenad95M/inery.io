@@ -1,6 +1,6 @@
 //google recaptcha
-function onSubmit(token) {
-  document.getElementById("application-form").submit();
+function recaptchaCallback() {
+  document.getElementById("submitFormBTN").removeAttribute("disabled");
 }
 //filtriranje poslova po kategorijama
 const jobFilter = function () {
@@ -111,7 +111,9 @@ const moreJobs = function () {
   }
 
   document.getElementById("show-all-jobs").addEventListener("click", callApi);
-  document.getElementById("touchCircle").addEventListener("touchstart",callApi);
+  document
+    .getElementById("touchCircle")
+    .addEventListener("touchstart", callApi);
 };
 // ponovo simulacija sa baze za job-description stranu
 const showEvenMoreJobs = function () {
