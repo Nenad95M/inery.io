@@ -1,7 +1,8 @@
 {
   "jobs": [
     {
-      "category": "back-end-jobs",
+      "category": "back-end",
+      "dataCategory":"back-end-jobs",
       "title": "Junior PHP Developer",
       "job": "BackEnd",
       "language": "php",
@@ -10,7 +11,8 @@
       "time": "Full-time"
     },
     {
-      "category": "back-end-jobs",
+      "category": "back-end",
+      "dataCategory":"back-end-jobs",
       "title": "Junior PHP Developer",
       "job": "BackEnd",
       "language": "php",

@@ -43,7 +43,6 @@ const jobFilter = function () {
     addActive(e);
     displayAll();
   }
-
 }
 
 
@@ -68,7 +67,7 @@ const moreJobs = function () {
 
   function makeUI(data) {
     data.forEach((element) => {
-      ui.innerHTML += `<article class="job-card" data-category="${element.category}">
+      ui.innerHTML += `<article class="job-card" data-category="${element.dataCategory}">
   <div class="meta-info">
     <div class="category ${element.category}">${element.job}</div>
     <div class="long-time-ago">22h ago</div>
