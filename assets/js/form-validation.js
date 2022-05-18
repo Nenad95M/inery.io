@@ -15,8 +15,10 @@ function recaptchaCallback() {
       requiredFormInputs.forEach((element) => {
         if (element.value.trim() === "") {
           element.placeholder = "This field must not be blank!";
+          element.style="border: 3px solid red";
           e.preventDefault();
         }
+        
       });
     });
   })();

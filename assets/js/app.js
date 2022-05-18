@@ -1,66 +1,53 @@
 //filtriranje poslova po kategorijama
 const jobFilter = function () {
-  const allJobsBtn = document.getElementById("all-jobs");
-  const blockchainJobs = document.getElementById("blockchain-jobs");
-  const frontEndJobs = document.getElementById("front-end-jobs");
-  const backEndJobs = document.getElementById("back-end-jobs");
   const filterButtons = Array.from(
-    document.querySelector(".job-filter").children
+    document.querySelector(".job-filter").querySelectorAll('button')
   );
-  let jobsContainer = document
-    .getElementById("jobs-container")
-    .getElementsByClassName("job-card");
 
-  jobsContainer = Array.from(jobsContainer);
+  const jobsContainer = Array.from(document
+    .getElementById("jobs-container").getElementsByClassName("job-card"));
 
-  function takeCareOfDOM(e) {
+  filterButtons.forEach(button => {
+    button.addEventListener('click', (e)=>{
+      buttonAndContent(e);
+      jobCategoryFilter(button.id);
+    })
+ });
+  //za filtriranje koristim atribut data-category koji sam napravio u HTML-u
+  function jobCategoryFilter(buttonID) {
+    jobsContainer.forEach(job => {
+      if(buttonID=="all-jobs"){
+        job.style.display = "flex";
+
+      }
+      else{
+      if (job.getAttribute("data-category") !== buttonID) {
+        job.style.display = "none";
+      }}
+    });
+  }
+
+  function buttonAndContent(e) {
+    function removeActive() {
+      filterButtons.forEach(button => {
+        button.classList.remove("active");
+      })};
     function addActive(e) {
       e.target.classList.add("active");
     }
     function displayAll() {
-      jobsContainer.forEach((element) => {
-        element.style.display = "flex";
-      });
-    }
-    function removeActive() {
-      filterButtons.forEach((element) => {
-        element.classList.remove("active");
+      jobsContainer.forEach((job) => {
+        job.style="display: flex";
       });
     }
     removeActive();
     addActive(e);
     displayAll();
   }
-  //za filtriranje koristim atribut data-category koji sam napravio u HTML-u
-  function jobCategoryFilter(jobCategory) {
-    jobsContainer.forEach((element) => {
-      if (element.getAttribute("data-category") !== jobCategory) {
-        element.style.display = "none";
-      }
-    });
-  }
-  allJobsBtn.addEventListener("click", function (e) {
-    takeCareOfDOM(e);
-  });
 
-  blockchainJobs.addEventListener("click", function (e) {
-    takeCareOfDOM(e);
-    let jobCategory = "blockchain";
-    jobCategoryFilter(jobCategory);
-  });
+}
 
-  frontEndJobs.addEventListener("click", function (e) {
-    takeCareOfDOM(e);
-    let jobCategory = "front-end";
-    jobCategoryFilter(jobCategory);
-  });
 
-  backEndJobs.addEventListener("click", function (e) {
-    takeCareOfDOM(e);
-    let jobCategory = "back-end";
-    jobCategoryFilter(jobCategory);
-  });
-};
 
 //Simulacija fecovanja dodatnih poslova iz neke baze
 const moreJobs = function () {

@@ -137,6 +137,10 @@ ul {
 }
 
 /* Jobs Section */
+#jobs-section .title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
 #jobs-section .jobs-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
