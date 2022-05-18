@@ -18,7 +18,6 @@ const jobFilter = function () {
     jobsContainer.forEach(job => {
       if(buttonID=="all-jobs"){
         job.style.display = "flex";
-
       }
       else{
       if (job.getAttribute("data-category") !== buttonID) {
