@@ -79,15 +79,15 @@ const moreJobs = function () {
   </div>
   <div class="spacetime">
     <div class="info-group">
-      <img src="/assets/img/jobs-article/time.png" alt="time">
+      <img src="assets/img/jobs-article/time.png" alt="time">
       <p class="info-group-text">${element.time}</p>
     </div>
     <div class="info-group">
-      <img src="/assets/img/jobs-article/location.png" alt="location">
+      <img src="assets/img/jobs-article/location.png" alt="location">
       <p class="info-group-text">${element.location}</p>
     </div>
   </div>
-  <a class="apply-btn" href="/application.html#application-form">Apply now</a>
+  <a class="apply-btn" href="application.html#application-form">Apply now</a>
 
 </article>`;
     });
@@ -125,12 +125,12 @@ const showEvenMoreJobs = function () {
               <small>${element.job}</small>
           </div>
       </div>
-      <div class="location"><img draggable="false" src="/assets/img/similarOffers/location-remote.png"
+      <div class="location"><img draggable="false" src="assets/img/similarOffers/location-remote.png"
               alt="remote location"></div>
-      <div class="level"><img draggable="false" src="/assets/img/similarOffers/level-medior.png"
+      <div class="level"><img draggable="false" src="assets/img/similarOffers/level-medior.png"
               alt="medior level"></div>
       <div class="department"><img draggable="false"
-              src="/assets/img/similarOffers/department-development.png" alt="development department">
+              src="assets/img/similarOffers/department-development.png" alt="development department">
       </div>
   </div>`;
     });
