@@ -42,7 +42,7 @@ ul {
 
 /* header start */
 #header {
-    background: url('/assets/img/header-img.png') no-repeat center center/cover;
+    background: url("../img/header-img.png") no-repeat center center/cover;
     position: relative;
     height: 64vh;
     display: flex;
@@ -431,7 +431,7 @@ ul {
 
 
 #subscribe {
-    background: url(/assets/img/leterandvectors.png), url(/assets/img/header-img.png) no-repeat center center/cover;
+    background: url("../img/leterandvectors.png"), url("../img/header-img.png") no-repeat center center/cover;
     background-size: cover;
     height: 70vh;
     display: flex;
@@ -471,7 +471,7 @@ ul {
     border: none;
     border-bottom: 1px solid #FFFFFF;
     padding: 1rem;
-    background: url('/assets/img/arrow.png') center right no-repeat;
+    background: url("../img/arrow.png") center right no-repeat;
 
 }
 
@@ -523,7 +523,7 @@ ul {
 }
 
 #similar-offers .webflow-img {
-    background: url('/assets/img/similarOffers/webflow.png') no-repeat center;
+    background: url("../img/similarOffers/webflow.png") no-repeat center;
     background-color: #336FAA;
     width: 80px;
     height: 80px;
@@ -531,14 +531,14 @@ ul {
 }
 
 #similar-offers .js-img {
-    background: url('/assets/img/similarOffers/javascript.png') no-repeat center;
+    background: url("../img/similarOffers/javascript.png") no-repeat center;
     background-color: #336FAA;
     width: 80px;
     height: 80px;
 }
 
 #similar-offers .php-img {
-    background: url('/assets/img/similarOffers/php.png') no-repeat center;
+    background: url("../img/similarOffers/php.png") no-repeat center;
     background-color: #336FAA;
     width: 80px;
     height: 80px;

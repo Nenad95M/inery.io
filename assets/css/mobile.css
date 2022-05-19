@@ -163,7 +163,7 @@ padding: 2rem 0;
 }
 /*Subscribe*/
 #subscribe {
-  background: url(/assets/img/header-img.png) no-repeat center center/cover;
+  background: url("../img/header-img.png") no-repeat center center/cover;
   background-size: cover;
   flex-direction: column-reverse;
   gap: 1rem;

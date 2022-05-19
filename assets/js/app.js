@@ -54,7 +54,7 @@ const moreJobs = function () {
   //nakon prvog poziva ce biti true
   function callApi() {
     if (called == false) {
-      fetch("/databaseSimulation/data.json")
+      fetch("../databaseSimulation/data.json")
         .then((response) => response.json())
         .then((data) => {
           makeUI(data["jobs"]);
@@ -106,7 +106,7 @@ const showEvenMoreJobs = function () {
   //nakon prvog poziva ce biti true
   function callApi() {
     if (called == false) {
-      fetch("/databaseSimulation/data.json")
+      fetch("../databaseSimulation/data.json")
         .then((response) => response.json())
         .then((data) => {
           makeUI(data["jobs"]);
